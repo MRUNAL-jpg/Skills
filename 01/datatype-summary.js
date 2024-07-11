@@ -36,3 +36,32 @@ const myFunction = function(){
 console.log(typeof anotherId);
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+// Stack (Primitive) , Heap (Non-Primitive)
+
+let myyoutubename ="Mrunal.js"
+
+let anothername = myyoutubename
+
+anothername = "Mru.php"
+
+console.log(myyoutubename);
+console.log(anothername);
+
+
+let userOne = {
+    email: "mru@gmail",
+    upi: "mru@ybl"
+
+}
+
+let userTwo = userOne
+userTwo.email = "sam@gmail"
+userTwo.upi = "sam@ybl"
+
+
+console.log(userTwo.email,userTwo.upi);
+console.log(userOne.email,userOne.upi);
